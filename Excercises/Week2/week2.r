@@ -41,3 +41,15 @@
 > table(x)
 > table(x)/100
 
+# Q10
+> x <- sample(c(2,-2),100,replace = T)
+> run_total <- 0 
+> run_total[1] <- x[1]
+> for (i in 2:100) run_total[i] = run_total[i-1] + x[i]
+> plot(run_total)
+> run_total[run_total > 0 ]
+> length(run_total[run_total > 0 ])
+> length(run_total[run_total > 0 ])/100
+> sum(x)
+
+
