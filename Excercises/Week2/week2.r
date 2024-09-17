@@ -57,4 +57,13 @@
 > sum(x)
 
 # Q11
-k <- 20
+> num_ps <- 0
+> for (i in 1:1000)
+{  
+  num_ps[i] = length( unique(sample(1:50,20,replace = T))) 
+}
+> hist(num_ps)
+> num_ps[num_ps==20]
+> length(num_ps[num_ps==20])
+> length(num_ps[num_ps==20])/1000
+> 1-(length(num_ps[num_ps==20])/1000)
